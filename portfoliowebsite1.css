@@ -1,0 +1,180 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header */
+header {
+    background: #333;
+    color: white;
+    padding: 1rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    font-weight: bold;
+}
+
+/* Hero Section */
+#hero {
+    background: #333;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#hero h1 {
+    font-size: 3rem;
+}
+
+#hero .btn {
+    background: #f2a900;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: block;
+    
+    
+}
+
+#hero .btn:hover {
+    background: #e89b00;
+}
+
+/* About Section */
+#about {
+    padding: 60px 20px;
+    background: white;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#about p {
+    font-size: 1.1rem;
+}
+
+/* Skills Section */
+#skills {
+    padding: 60px 20px;
+    background: #f8f8f8;
+}
+
+#skills ul {
+    list-style: none;
+}
+
+#skills ul li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+/* Projects Section */
+#projects {
+    padding: 60px 20px;
+    background: white;
+}
+
+.project-card {
+    background: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.project-card img {
+    width: 30%;
+    border-radius: 8px;
+    align-items: center;
+}
+
+.project-card h3 {
+    margin-top: 15px;
+    font-size: 1.5rem;
+}
+
+/* Contact Section */
+#contact {
+    padding: 60px 20px;
+    background: #f8f8f8;
+}
+
+#contact a {
+    color: #333;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.modal { 
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+ }
+ 
+ .modal-content { 
+    position: relative;
+    margin: 10% auto;
+    padding: 20px;
+    width: 80%;
+    background: #fff;
+ }
+ 
+ .close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 24px;
+ }
+ 

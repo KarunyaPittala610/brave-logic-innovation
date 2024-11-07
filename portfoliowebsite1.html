@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pittala Karunya | Portfolio</title>
+    <link rel="stylesheet" href="portfoliowebsite1.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container">
+            <h1>Hi, I'm Karunya Pittala</h1>
+            <p>A passionate Developer who loves creating innovative solutions.</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I'm a Fresher, eager to learn and grow in the field of IT industry. I graduated from Sree Chaitanya College of Engineering with a stream of computer science and engineering . I am passionate about learning, seeking an entry- level position to kick-start a successful career in the industry. Committed to leveraging my communication, leadership, and project management skills to contribute to the growth and success of an organization.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>C Language</li>
+                <li>JAVA</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>MYSQL</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+
+            <div class="project-card">
+                <img src="farming.jpeg" alt="Project 1">
+                <h3>FARMING ASSISTANT WEB SERVICE:</h3>
+                <p>Developed a web service using to assist farmers inmanaging their farming activities.</p>
+                <button onclick="openModal('project1')">View Details</button>
+            </div>
+
+            <div id="project1" class="modal">
+                <div class="modal-content">
+                    <span onclick="closeModal('project1')" class="close">&times;</span>
+                    <h3>Farming Assistat Web Service</h3>
+                    <p>Farming assistant web service is a web project to help the farmers working with the motive of greater profitability by direct communication between; farmer-to- supplier and farmer-to-farmer.
+                        This innovative site allows a good farmer, retailer and supplier communication. It provides an option of login to farmers and communicates to respective dealers. Farmers are notified whenever dealers publish an advertisement or offer on the website through Sms message. The farmers also have an option to submit their grievances and complaints to respective dealers or authorities using their farmer login on a separate complaints page and authorities will get access to that page regularly using their login id and passwords.</p>
+                    <p><b>Features:</b></p>
+                    <p>Separate login areas with appropriated functionality for farmers, administrators and dealers/ retailers.
+                        A separate page where only farmers can post complaints and only assigned administrators can read and edit this page.
+                        Pages where dealers and retailers may post their ads and notifications.
+                        Farmers are notified of these notifications via sms whenever new ads are published.
+                        An effective GUI so that rural people may easily use the service.
+                        Can be over for multiple villages to communicate and deal with each other.</p>
+                    <p><b>Advantages:</b></p>
+                    <p>No Interaction of Third person,direct communication between farmer and dealer.<br>
+                        Farmers can directly contact suppliers by searching online.<br>
+                        Farmers may submit their grievances online.<br>
+                        Farmers get notification of any new offers/schemes.</p>
+
+                    </div>
+             </div>
+
+            <div class="project-card">
+                <img src="authentication.jpeg" alt="Project 2">
+                <h3>AUTHENITICATION BY ENCRYPTED NEGATIVE PASSWORD:</h3>
+                <p>Implemented encryption algorithms and techniques to enhancethe security of user passwords.</p>
+                <button onclick="openModal('project2')">View Details</button>
+            </div>
+
+            <div id="project2" class="modal">
+                <div class="modal-content">
+                    <span onclick="closeModal('project2')" class="close">&times;</span>
+                    <h3>Authentication By Encrypted Negative Password</h3>
+                    <p>Now a days cyber offence is most common, in that password cracking is one of the attacks.The attackers uses many ways to get the credentials such password cracking tool is used to steel the sensitive data,To overcome this problem we should use strongly hashed encrypted password.This method aims to provide an additional layer of security by leveraging a unique concept instead of storing or transmitting the actual password, an encrypted negative of the password is used.</p>
+                    <p><b>How It Works:</b></p>
+                        1. <i>Negative Password Concept:</i>
+                           Instead of storing a password directly, a system calculates a "negative" or transformed version of the password.
+                           This negative password is encrypted and saved on the system.<br>
+                        2. <i>Login Process:</i>
+                         When you log in, you enter your password, which is then converted into its "negative" form by the system.
+                         The system encrypts this new version and checks if it matches the saved, encrypted negative password.<br>
+                        3. <i>Security Advantage:</i>
+                           Since the actual password isn’t stored, attackers can’t easily steal it. They would need to know both how the negative transformation and encryption are done to recreate the password.
+
+                       <p><b> Advantages</b></p>
+                        <p><i>Enhanced Security:</i> Since neither the actual password nor a simple hash of it is stored, this approach makes it more difficult for attackers.</p>
+                        <p><i>Reduced Vulnerability:</i> Even if the database storing these encrypted negative passwords is compromised, attackers would face an additional challenge since they’d need both the encryption key and the method of "negating" the password.</p>
+                         This approach could be beneficial for systems that need higher levels of security, like:<b>Financial Systems,Medical Records,Government Databases.</b>
+                
+                </div>
+             </div>
+
+            <div class="project-card">
+                <img src="FIR.jpeg" alt="Project 3">
+                <h3>POLICE FIR CRIME MANAGEMENT APPLICATION:</h3>
+                <p>Designed and implemented a user-friendly interface for filling andmanaging FIRs.</p>
+                <button onclick="openModal('project3')">View Details</button>
+            </div>
+
+            <div id="project3" class="modal">
+                <div class="modal-content">
+                    <span onclick="closeModal('project3')" class="close">&times;</span>
+                    <h3>Police FIR Crime Management Application</h3>
+                    <p>The Police FIR Crime Management Application is web based application which help all Police stations across the country and specifically looks into the subject of Crime Records Management.Initially, the system will be implemented across Cities and Towns and later on, be interlinked. so that a Police Staff can access information across all records in the state thus helping fast and successfully close the cases.</p>
+                    <p>**Citizens in India are not convenient moving around police stations to submit a case because of many reasons like fear, time or ignorance.Though lot of filed cases are not investigated due to lack of proper evidences and cooperation of public.This application will provide a platform for public to report about crime to police station without any fear.This method will be helpful to general public and police to provide better service for public.</p>
+                <p><b>Existing System:</b></p>
+                <p>The public are afraid to give an complaint in police station because they are filled with a false fear about the police department.
+                    The victims have to go and personally register the case in the police stations.Slow registration of FIR in Accidents and assault cases is one of the biggest problems of the existing system.
+                    Often the victims are told by the hospital authorities that the treatment would not be started unless an FIR has been registered.</p>
+                <p><b>Proposed System:</b></p>
+                <p>An online complaint registering system will solve the fears of public and will also help the police department in catching criminals
+                    The system provides proper security and reduces the manual work. 
+                     proposed system will help the user to reduce the workload and mental conflict. 
+                    The proposed system helps the user to work user friendly and he can easily do his jobs without time lagging.</p>
+                </div>
+             </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Feel free to reach out to me via email at <a href="mailto:your.email@example.com">pittalakaruya610@gmail.com</a></p>
+            <p>Or connect with me on my social media:</p>
+            
+                <a href="https://www.linkedin.com/in/pittala-karunya-056b3a1a5" target="_blank" rel="noopener noreferrer">
+                     LinkedIn:linkedin.com/in/pittala-karunya-056b3a1a5
+                </a>
+            <!-- <ul>
+                <li><a href="#">GitHub</a></li>
+                <li><a href="#">Twitter</a></li>
+            </ul>  -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Pittala Karunya. All rights reserved.</p>
+    </footer>
+
+    <script src="portfoliowebsite1.js"></script>
+</body>
+</html>
